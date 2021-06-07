@@ -1,0 +1,44 @@
+
+#top-bar-container {
+    background-color: rgb(202, 202, 202);
+    width: clamp(100px, 100vw, 800px);
+    font-family: sans-serif;
+    
+    #user-container {
+        display: flex;
+        padding: 8px;
+        
+        #user-photo {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+        }
+        
+        #user {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 8px;
+            font-size: 0.8rem;
+        }
+    }
+
+    #sign-out-container {
+        padding-left: 10px;
+        padding-bottom: 5px;
+
+        #sign-out-btn {
+            padding: 6px;
+            color: #fff;
+            background-color: rgb(221, 58, 58);
+            border: 2px solid rgb(238, 134, 134);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.1s ease-in-out;
+
+            &:active {
+                background-color: rgb(238, 134, 134);
+            }
+        }
+    }
+}

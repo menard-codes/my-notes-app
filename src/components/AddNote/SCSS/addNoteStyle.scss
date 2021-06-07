@@ -1,0 +1,51 @@
+
+#add-note-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    width: clamp(100px, 100vw, 800px);
+    background: #fff;
+    
+    #title-container {
+        padding-bottom: 20px;
+        
+        #app-name {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding-left: 10px;
+        }
+    }
+    
+    #new-note-form {
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        input {
+            width: clamp(100px, 90vw, 720px);
+            padding: 4px;
+            font-family: sans-serif;
+            font-size: 1.3rem;
+        }
+
+        button {
+            padding: 8px;
+            color: #fff;
+            background-color: rgb(31, 201, 102);
+            border: 2px solid rgb(104, 226, 155);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.1s ease-in-out;
+            font-family: sans-serif;
+            font-size: 1rem;
+
+            &:active {
+                background-color: rgb(104, 226, 155);
+            }
+
+        }
+    }
+}
